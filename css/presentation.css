@@ -10,161 +10,121 @@
 }
 
 body{
-
     background:#000;
     color:#fff;
-
     width:100%;
     height:100vh;
-
     overflow:hidden;
-
 }
 
 /* Background */
 
 .background{
-
     position:fixed;
     inset:0;
-
     background:
-    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-    url("../images/presentation-bg.jpg");
-
+        linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+        url("../images/presentation-bg.jpg");
     background-size:cover;
     background-position:center;
-
     z-index:-1;
-
 }
 
 /* Main */
 
 .presentation{
-
     width:100%;
     height:100vh;
-
     display:flex;
-
     flex-direction:column;
-
     justify-content:center;
-
     align-items:center;
-
     padding:70px;
-
 }
 
 /* Song Title */
 
 .song-title{
-
     font-size:32px;
-
     font-weight:700;
-
     color:#FFD54F;
-
     margin-bottom:50px;
-
     text-align:center;
-
 }
 
 /* Lyrics */
 
 #lyrics{
-
     width:100%;
-
     max-width:1500px;
-
     text-align:center;
-
     font-size:54px;
-
     font-weight:700;
-
     line-height:1.8;
-
-    color:white;
-
-    text-shadow:
-    0 3px 12px rgba(0,0,0,.8);
-
+    color:#fff;
+    text-shadow:0 3px 12px rgba(0,0,0,.8);
     white-space:pre-line;
+}
+
+/* =====================================
+   Controls (TOP RIGHT)
+===================================== */
+
+.controls{
+    position:fixed;
+    top:15px;
+    right:20px;
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    z-index:9999;
+}
+
+.controls button{
+
+    border:none;
+    border-radius:8px;
+
+    background:#2563eb;
+    color:#fff;
+
+    padding:8px 16px;
+
+    font-size:14px;
+    font-weight:600;
+
+    cursor:pointer;
+    transition:.25s;
+}
+
+.controls button:hover{
+
+    background:#1d4ed8;
+    transform:translateY(-2px);
 
 }
 
 /* Slide Counter */
 
 .counter{
-
     position:fixed;
+    top:18px;
+    right:180px;
 
-    bottom:30px;
-
-    right:40px;
+    color:#fff;
 
     font-size:18px;
-
-    color:#ddd;
-
-}
-
-/* Controls */
-
-.controls{
-
-    position:fixed;
-
-    top:20px;
-
-    right:30px;
-
-    display:flex;
-
-    gap:12px;
-
-}
-
-.controls button{
-
-    border:none;
-
-    padding:12px 18px;
-
-    border-radius:10px;
-
-    cursor:pointer;
-
-    font-size:16px;
-
     font-weight:600;
 
-    color:white;
-
-    background:#2563eb;
-
-    transition:.3s;
-
+    z-index:9999;
 }
 
-.controls button:hover{
-
-    background:#3b82f6;
-
-}
-
-/* Fade Animation */
+/* Fade */
 
 .fade{
-
     animation:fade .35s ease;
-
 }
 
 @keyframes fade{
@@ -185,44 +145,28 @@ to{
 
 }
 
-/* Fullscreen */
-
 :fullscreen{
-
-    background:black;
-
+    background:#000;
 }
 
-/* Mobile */
+/* =====================================
+   Mobile
+===================================== */
 
 @media(max-width:768px){
 
 .presentation{
-
-    padding:25px;
-
+    padding:20px;
 }
 
 .song-title{
-
-    font-size:24px;
-
-    margin-bottom:30px;
-
+    font-size:22px;
+    margin-bottom:20px;
 }
 
 #lyrics{
-
-    font-size:28px;
-
-    line-height:1.6;
-
-}
-
-.counter{
-
-    font-size:15px;
-
+    font-size:30px;
+    line-height:1.7;
 }
 
 .controls{
@@ -230,89 +174,23 @@ to{
     top:10px;
     right:10px;
 
+    gap:6px;
+
 }
 
 .controls button{
 
-    padding:8px 12px;
+    padding:6px 10px;
+    font-size:12px;
+
+}
+
+.counter{
+
+    top:12px;
+    right:120px;
 
     font-size:14px;
-
-}
-
-}
-/* ===========================
-   MOBILE PRESENTATION
-=========================== */
-
-@media (max-width: 768px){
-
-    #songTitle{
-        font-size:22px;
-        margin-top:10px;
-    }
-
-    #slide{
-        font-size:28px !important;
-        line-height:1.8;
-        padding:20px;
-        text-align:center;
-    }
-
-    .controls{
-        gap:8px;
-        padding:10px;
-    }
-
-    .controls button{
-        padding:10px 14px;
-        font-size:15px;
-    }
-
-    #slideCount{
-        font-size:18px;
-    }
-
-}
-@media (max-width: 768px) {
-
-.controls{
-
-    position: fixed;
-
-    bottom: 20px;
-
-    left: 50%;
-
-    transform: translateX(-50%);
-
-    width: 95%;
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    gap: 15px;
-
-    z-index: 999;
-
-}
-
-.controls button{
-
-    padding: 14px 22px;
-
-    font-size: 18px;
-
-}
-
-#slideCount{
-
-    font-size: 22px;
-
-    font-weight: 600;
 
 }
 
