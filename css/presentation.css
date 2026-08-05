@@ -241,3 +241,36 @@ to{
 }
 
 }
+/* ===========================
+   MOBILE PRESENTATION
+=========================== */
+
+@media (max-width: 768px){
+
+    #songTitle{
+        font-size:22px;
+        margin-top:10px;
+    }
+
+    #slide{
+        font-size:28px !important;
+        line-height:1.8;
+        padding:20px;
+        text-align:center;
+    }
+
+    .controls{
+        gap:8px;
+        padding:10px;
+    }
+
+    .controls button{
+        padding:10px 14px;
+        font-size:15px;
+    }
+
+    #slideCount{
+        font-size:18px;
+    }
+
+}

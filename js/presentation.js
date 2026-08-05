@@ -138,8 +138,9 @@ const fullscreenBtn = document.getElementById("fullscreenBtn");
 const increaseFont = document.getElementById("increaseFont");
 const decreaseFont = document.getElementById("decreaseFont");
 const backBtn = document.getElementById("backBtn");
+let fontSize = window.innerWidth <= 768 ? 28 : 48;
 
-let fontSize = 48;
+slide.style.fontSize = fontSize + "px";
 
 slide.style.fontSize = fontSize + "px";
 
