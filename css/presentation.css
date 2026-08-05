@@ -1,0 +1,243 @@
+/* ========================================
+   Voice of Christ Presentation
+======================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:#000;
+    color:#fff;
+
+    width:100%;
+    height:100vh;
+
+    overflow:hidden;
+
+}
+
+/* Background */
+
+.background{
+
+    position:fixed;
+    inset:0;
+
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("../images/presentation-bg.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    z-index:-1;
+
+}
+
+/* Main */
+
+.presentation{
+
+    width:100%;
+    height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:70px;
+
+}
+
+/* Song Title */
+
+.song-title{
+
+    font-size:32px;
+
+    font-weight:700;
+
+    color:#FFD54F;
+
+    margin-bottom:50px;
+
+    text-align:center;
+
+}
+
+/* Lyrics */
+
+#lyrics{
+
+    width:100%;
+
+    max-width:1500px;
+
+    text-align:center;
+
+    font-size:54px;
+
+    font-weight:700;
+
+    line-height:1.8;
+
+    color:white;
+
+    text-shadow:
+    0 3px 12px rgba(0,0,0,.8);
+
+    white-space:pre-line;
+
+}
+
+/* Slide Counter */
+
+.counter{
+
+    position:fixed;
+
+    bottom:30px;
+
+    right:40px;
+
+    font-size:18px;
+
+    color:#ddd;
+
+}
+
+/* Controls */
+
+.controls{
+
+    position:fixed;
+
+    top:20px;
+
+    right:30px;
+
+    display:flex;
+
+    gap:12px;
+
+}
+
+.controls button{
+
+    border:none;
+
+    padding:12px 18px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    color:white;
+
+    background:#2563eb;
+
+    transition:.3s;
+
+}
+
+.controls button:hover{
+
+    background:#3b82f6;
+
+}
+
+/* Fade Animation */
+
+.fade{
+
+    animation:fade .35s ease;
+
+}
+
+@keyframes fade{
+
+from{
+
+    opacity:0;
+    transform:translateY(25px);
+
+}
+
+to{
+
+    opacity:1;
+    transform:translateY(0);
+
+}
+
+}
+
+/* Fullscreen */
+
+:fullscreen{
+
+    background:black;
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.presentation{
+
+    padding:25px;
+
+}
+
+.song-title{
+
+    font-size:24px;
+
+    margin-bottom:30px;
+
+}
+
+#lyrics{
+
+    font-size:28px;
+
+    line-height:1.6;
+
+}
+
+.counter{
+
+    font-size:15px;
+
+}
+
+.controls{
+
+    top:10px;
+    right:10px;
+
+}
+
+.controls button{
+
+    padding:8px 12px;
+
+    font-size:14px;
+
+}
+
+}

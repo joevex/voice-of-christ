@@ -1,0 +1,416 @@
+/* ==========================================
+   Voice of Christ - Add Song (Premium)
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0b1220;
+    color:#fff;
+    min-height:100vh;
+    overflow-x:hidden;
+}
+
+/* Background */
+
+.background{
+    position:fixed;
+    inset:0;
+    background:
+    radial-gradient(circle at top,#2563eb33,transparent 45%),
+    radial-gradient(circle at bottom right,#7c3aed22,transparent 40%),
+    linear-gradient(135deg,#0b1220,#101827,#1e293b);
+    z-index:-1;
+}
+
+/* Container */
+
+.container{
+    width:92%;
+    max-width:900px;
+    margin:auto;
+    padding:40px 0 60px;
+}
+
+/* Header */
+
+header{
+    margin-bottom:30px;
+}
+
+.back-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    text-decoration:none;
+    color:#fff;
+    background:#2563eb;
+    padding:12px 22px;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
+    margin-bottom:25px;
+}
+
+.back-btn:hover{
+    background:#3b82f6;
+    transform:translateY(-2px);
+}
+
+header h1{
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+header p{
+    color:#cbd5e1;
+    font-size:17px;
+}
+
+/* Card */
+
+.card{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:24px;
+    padding:35px;
+    box-shadow:0 20px 60px rgba(0,0,0,.30);
+}
+/* ==========================================
+   FORM
+========================================== */
+
+#songForm{
+    width:100%;
+}
+
+/* Row */
+
+.row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+/* Input Group */
+
+.input-group{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:22px;
+}
+
+.input-group label{
+    margin-bottom:10px;
+    font-size:15px;
+    font-weight:600;
+    color:#e2e8f0;
+}
+
+/* Inputs */
+
+.input-group input,
+.input-group select,
+.input-group textarea{
+
+    width:100%;
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.10);
+
+    border-radius:14px;
+
+    padding:15px 18px;
+
+    color:#fff;
+
+    font-size:15px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+/* Placeholder */
+
+.input-group input::placeholder,
+.input-group textarea::placeholder{
+
+    color:#94a3b8;
+
+}
+
+/* Focus */
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus{
+
+    border-color:#3b82f6;
+
+    box-shadow:0 0 18px rgba(37,99,235,.30);
+
+}
+
+/* Select */
+
+.input-group select{
+
+    cursor:pointer;
+
+}
+
+.input-group select option{
+
+    background:#111827;
+
+    color:#fff;
+
+}
+
+/* Lyrics */
+
+.input-group textarea{
+
+    resize:vertical;
+
+    min-height:320px;
+
+    line-height:1.8;
+
+}
+
+/* Scrollbar */
+
+.input-group textarea::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+.input-group textarea::-webkit-scrollbar-thumb{
+
+    background:#2563eb;
+
+    border-radius:20px;
+
+}
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.buttons{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:15px;
+
+    margin-top:30px;
+
+}
+
+.cancel,
+.save{
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+    padding:15px 28px;
+
+    border-radius:14px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+/* Clear Button */
+
+.cancel{
+
+    background:rgba(255,255,255,.08);
+
+    color:#fff;
+
+    border:1px solid rgba(255,255,255,.12);
+
+}
+
+.cancel:hover{
+
+    background:rgba(255,255,255,.15);
+
+    transform:translateY(-2px);
+
+}
+
+/* Save Button */
+
+.save{
+
+    background:linear-gradient(135deg,#2563eb,#3b82f6);
+
+    color:#fff;
+
+    box-shadow:0 10px 25px rgba(37,99,235,.35);
+
+}
+
+.save:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 15px 35px rgba(37,99,235,.45);
+
+}
+
+/* Active */
+
+.cancel:active,
+.save:active{
+
+    transform:scale(.98);
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+.container{
+
+    width:95%;
+
+    padding:20px 0 40px;
+
+}
+
+header h1{
+
+    font-size:30px;
+
+}
+
+header p{
+
+    font-size:15px;
+
+}
+
+.card{
+
+    padding:22px;
+
+}
+
+.row{
+
+    grid-template-columns:1fr;
+
+    gap:0;
+
+}
+
+.input-group{
+
+    margin-bottom:18px;
+
+}
+
+.input-group textarea{
+
+    min-height:220px;
+
+}
+
+.buttons{
+
+    flex-direction:column;
+
+}
+
+.cancel,
+.save{
+
+    width:100%;
+
+}
+
+}
+
+/* ==========================================
+   ANIMATION
+========================================== */
+
+.card{
+
+    animation:fadeUp .6s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#0b1220;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#2563eb;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#3b82f6;
+
+}

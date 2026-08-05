@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Voice of Christ | Dashboard</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<main class="dashboard">
+
+    <!-- Header -->
+    <header class="header">
+
+        <div class="logo-area">
+
+            <img src="assets/images/logo.png" class="logo" alt="Voice of Christ Logo">
+
+            <div>
+                <h1>Voice of Christ</h1>
+                <p>Church Worship Presentation System</p>
+            </div>
+
+        </div>
+
+        <div class="header-right">
+
+            <div class="status">
+                🟢 Online
+            </div>
+
+            <button id="logoutBtn">
+                Logout
+            </button>
+
+        </div>
+
+    </header>
+
+    <!-- Welcome Card -->
+    <section class="welcome-card">
+
+        <div>
+
+            <p class="welcome-text">
+                Welcome Back 👋
+            </p>
+
+            <h2 id="churchName">
+                Loading...
+            </h2>
+
+            <p id="pastorName">
+                Loading...
+            </p>
+
+        </div>
+
+        <div class="church-icon">
+            ⛪
+        </div>
+
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+
+        <div class="stat-card">
+            <h3>📖</h3>
+            <h2>1500+</h2>
+            <p>Songs</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>🙏</h3>
+            <h2>250+</h2>
+            <p>Worship Songs</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>👥</h3>
+            <h2>1</h2>
+            <p>Church</p>
+        </div>
+
+    </section>
+
+    <!-- Menu -->
+    <section class="menu-grid">
+
+        <a href="search-song.html" class="menu-card">
+
+    <div class="icon">🔍</div>
+
+    <h3>Search Songs</h3>
+
+    <p>Search My Songs & Online</p>
+
+</a>
+
+        <a href="christian-songs.html" class="menu-card">
+
+            <div class="icon">📖</div>
+
+            <h3>Christian Songs</h3>
+
+            <p>Browse all Christian songs</p>
+
+        </a>
+
+        <a href="add-song.html" class="menu-card">
+
+            <div class="icon">➕</div>
+
+            <h3>Add New Song</h3>
+
+            <p>Add lyrics & generate slides</p>
+
+        </a>
+
+        <a href="todays-songs.html" class="menu-card">
+
+            <div class="icon">📅</div>
+
+            <h3>Today's Songs</h3>
+
+            <p>Manage today's worship</p>
+
+        </a>
+
+    </section>
+
+    <footer>
+        Voice of Christ © 2026
+    </footer>
+
+</main>
+
+<script type="module" src="js/dashboard.js"></script>
+
+</body>
+</html>

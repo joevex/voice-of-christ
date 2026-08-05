@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Add Song | Voice of Christ</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/add-song.css">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="container">
+
+<header>
+
+<a href="christian-songs.html" class="back-btn">
+← Back
+</a>
+
+<h1>Add New Christian Song</h1>
+
+<p>Save songs to your church library</p>
+
+</header>
+
+<div class="card">
+
+<form id="songForm">
+
+<div class="input-group">
+
+<label>Song Title</label>
+
+<input
+type="text"
+id="title"
+placeholder="Enter song title"
+required>
+
+</div>
+
+<div class="row">
+
+<div class="input-group">
+
+<label>Language</label>
+
+<select id="language">
+
+<option>Tamil</option>
+
+<option>English</option>
+
+<option>Malayalam</option>
+
+<option>Hindi</option>
+
+</select>
+
+</div>
+
+<div class="input-group">
+
+<label>Category</label>
+
+<select id="category">
+
+<option>Worship</option>
+
+<option>Praise</option>
+
+<option>Christmas</option>
+
+<option>Youth</option>
+
+<option>Special</option>
+
+<option>Others</option>
+
+</select>
+
+</div>
+
+</div>
+
+<div class="input-group">
+
+<label>Lyrics</label>
+
+<textarea
+id="lyrics"
+rows="15"
+placeholder="Type song lyrics..."
+required></textarea>
+
+</div>
+
+<div class="buttons">
+
+<button
+type="reset"
+class="cancel">
+
+Clear
+
+</button>
+
+<button
+type="submit"
+class="save">
+
+💾 Save Song
+
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+<script type="module" src="js/add-song.js"></script>
+
+</body>
+
+</html>

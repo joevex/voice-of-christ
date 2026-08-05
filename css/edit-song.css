@@ -1,0 +1,300 @@
+/* ==========================================
+   Voice of Christ - Edit Song
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:#0b1220;
+    color:#fff;
+    min-height:100vh;
+    overflow-x:hidden;
+
+}
+
+/* Background */
+
+.background{
+
+    position:fixed;
+    inset:0;
+
+    background:
+    radial-gradient(circle at top,#2563eb33,transparent 45%),
+    radial-gradient(circle at bottom right,#7c3aed22,transparent 40%),
+    linear-gradient(135deg,#0b1220,#101827,#1e293b);
+
+    z-index:-1;
+
+}
+
+/* Container */
+
+.container{
+
+    width:92%;
+    max-width:900px;
+
+    margin:auto;
+
+    padding:40px 0;
+
+}
+
+/* Header */
+
+.header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+
+}
+
+.header h1{
+
+    font-size:34px;
+
+    font-weight:700;
+
+}
+
+.back-btn{
+
+    text-decoration:none;
+
+    color:#fff;
+
+    background:#2563eb;
+
+    padding:12px 22px;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+}
+
+.back-btn:hover{
+
+    background:#3b82f6;
+
+}
+
+/* Form */
+
+.song-form{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.1);
+
+    border-radius:22px;
+
+    padding:35px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.3);
+
+}
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-bottom:22px;
+
+}
+
+.form-group label{
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+    color:#dbeafe;
+
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:14px;
+
+    background:rgba(255,255,255,.08);
+
+    color:white;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.form-group textarea{
+
+    resize:vertical;
+
+    min-height:320px;
+
+    line-height:1.8;
+
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+
+    border-color:#3b82f6;
+
+    box-shadow:0 0 18px rgba(59,130,246,.35);
+
+}
+
+::placeholder{
+
+    color:#cbd5e1;
+
+}
+
+select option{
+
+    background:#111827;
+
+    color:white;
+
+}
+
+/* Buttons */
+
+.buttons{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:15px;
+
+    margin-top:30px;
+
+}
+
+.buttons button{
+
+    border:none;
+
+    cursor:pointer;
+
+    padding:14px 28px;
+
+    border-radius:14px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.cancel{
+
+    background:#4b5563;
+
+    color:white;
+
+}
+
+.cancel:hover{
+
+    background:#6b7280;
+
+}
+
+.save{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+.save:hover{
+
+    background:#3b82f6;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 12px 25px rgba(37,99,235,.35);
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.container{
+
+    width:95%;
+
+}
+
+.header{
+
+    flex-direction:column;
+
+    gap:20px;
+
+    text-align:center;
+
+}
+
+.song-form{
+
+    padding:22px;
+
+}
+
+.form-group textarea{
+
+    min-height:220px;
+
+}
+
+.buttons{
+
+    flex-direction:column;
+
+}
+
+.buttons button{
+
+    width:100%;
+
+}
+
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Edit Song | Voice of Christ</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/edit-song.css">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="container">
+
+    <!-- Header -->
+
+    <header class="header">
+
+        <a href="christian-songs.html" class="back-btn">
+            ← Back
+        </a>
+
+        <h1>✏ Edit Song</h1>
+
+    </header>
+
+    <!-- Form -->
+
+    <form id="editForm" class="song-form">
+
+        <!-- Title -->
+
+        <div class="form-group">
+
+            <label>Song Title</label>
+
+            <input
+                type="text"
+                id="title"
+                required>
+
+        </div>
+
+        <!-- Language -->
+
+        <div class="form-group">
+
+            <label>Language</label>
+
+            <select id="language">
+
+                <option>Tamil</option>
+                <option>English</option>
+                <option>Hindi</option>
+                <option>Telugu</option>
+                <option>Malayalam</option>
+
+            </select>
+
+        </div>
+
+        <!-- Category -->
+
+        <div class="form-group">
+
+            <label>Category</label>
+
+            <select id="category">
+
+                <option>Worship</option>
+                <option>Praise</option>
+                <option>Prayer</option>
+                <option>Offering</option>
+                <option>Communion</option>
+                <option>Christmas</option>
+                <option>Good Friday</option>
+                <option>Easter</option>
+                <option>Youth</option>
+                <option>General</option>
+
+            </select>
+
+        </div>
+
+        <!-- YouTube -->
+
+        <div class="form-group">
+
+            <label>YouTube Link</label>
+
+            <input
+                type="url"
+                id="youtube"
+                placeholder="https://youtube.com/...">
+
+        </div>
+
+        <!-- Lyrics -->
+
+        <div class="form-group">
+
+            <label>Lyrics</label>
+
+            <textarea
+                id="lyrics"
+                rows="16"
+                required></textarea>
+
+        </div>
+
+        <!-- Buttons -->
+
+        <div class="buttons">
+
+            <button
+                type="button"
+                class="cancel"
+                onclick="history.back()">
+
+                Cancel
+
+            </button>
+
+            <button
+                type="submit"
+                class="save">
+
+                💾 Save Changes
+
+            </button>
+
+        </div>
+
+    </form>
+
+</div>
+
+<script type="module" src="js/edit-song.js"></script>
+
+</body>
+
+</html>

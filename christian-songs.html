@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Christian Songs | Voice of Christ</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/christian-songs.css">
+
+</head>
+
+<body>
+
+    <div class="background"></div>
+
+    <div class="container">
+
+        <!-- Header -->
+
+        <header class="header">
+
+            <div class="left">
+
+                <a href="dashboard.html" class="back-btn">
+                    ← Dashboard
+                </a>
+
+                <div>
+
+                    <h1>📖 Christian Songs</h1>
+
+                    <p>Manage all church songs</p>
+
+                </div>
+
+            </div>
+
+            <a href="add-song.html" class="add-btn">
+
+                + Add Song
+
+            </a>
+
+        </header>
+
+        <!-- Search -->
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search songs...">
+
+        </div>
+
+        <!-- Dynamic Song List -->
+
+        <section
+            id="songContainer"
+            class="song-grid">
+
+            <!-- Songs will be loaded here from Firebase -->
+
+        </section>
+
+    </div>
+
+    <script type="module" src="js/christian-songs.js"></script>
+
+</body>
+
+</html>
