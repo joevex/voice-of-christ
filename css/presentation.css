@@ -149,10 +149,6 @@ to{
     background:#000;
 }
 
-/* =====================================
-   Mobile
-===================================== */
-
 @media(max-width:768px){
 
 .presentation{
@@ -170,28 +166,21 @@ to{
 }
 
 .controls{
-
     top:10px;
     right:10px;
-
-    gap:6px;
-
+    gap:8px;
 }
 
 .controls button{
-
-    padding:6px 10px;
-    font-size:12px;
-
+    padding:12px 20px;   /* Bigger button */
+    font-size:17px;      /* Bigger text */
+    border-radius:10px;
 }
 
 .counter{
-
-    top:12px;
-    right:120px;
-
-    font-size:14px;
-
+    top:16px;
+    right:180px;
+    font-size:16px;
 }
 
 }
