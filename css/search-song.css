@@ -1,7 +1,91 @@
-/* ===============================
-   SONG CARD (COMPACT)
-================================ */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
 
+body{
+    background:#07111f;
+    color:#fff;
+    min-height:100vh;
+}
+
+.background{
+    position:fixed;
+    inset:0;
+    background:
+    radial-gradient(circle at top left,#1e3a8a 0%,transparent 45%),
+    radial-gradient(circle at bottom right,#312e81 0%,transparent 45%),
+    #030712;
+    z-index:-1;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+}
+
+header{
+    margin-bottom:35px;
+}
+
+.back-btn{
+    color:#60a5fa;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.back-btn:hover{
+    color:#93c5fd;
+}
+
+header h1{
+    font-size:40px;
+    margin-top:18px;
+}
+
+header p{
+    color:#94a3b8;
+    margin-top:8px;
+}
+
+.search-card{
+    display:flex;
+    gap:15px;
+    margin:35px 0;
+}
+
+.search-card input{
+    flex:1;
+    padding:15px 18px;
+    border:none;
+    border-radius:12px;
+    background:#111827;
+    color:#fff;
+    font-size:16px;
+}
+
+.search-card button{
+    padding:15px 30px;
+    border:none;
+    border-radius:12px;
+    background:#2563eb;
+    color:white;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.search-card button:hover{
+    background:#3b82f6;
+}
+
+#results{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
 .song-card{
 
     background:rgba(255,255,255,.06);
