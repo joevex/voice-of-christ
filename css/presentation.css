@@ -98,11 +98,31 @@ body{
     cursor:pointer;
     transition:.25s;
 }
+#fontSlider{
+
+    width:90px;
+    height:5px;
+
+}
 
 .controls button:hover{
 
     background:#1d4ed8;
     transform:translateY(-2px);
+
+}
+/* ===========================
+   Font Size Slider
+=========================== */
+
+#fontSlider{
+
+    width:140px;
+    height:6px;
+
+    cursor:pointer;
+
+    accent-color:#2563eb;
 
 }
 
